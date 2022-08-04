@@ -10,7 +10,9 @@ const { title, description } = AppConfig;
 <Base head={{ title, description }}>
   <Hero />
   <GameList />
-  <div class="flex items-center justify-center">
-    <iframe class="flex" src="/games/circle/Circle Tower.html" height="600" width="300"></iframe>
-  </div>
+  <Fragment client:idle>
+    <div class="flex items-center justify-center">
+      <iframe class="flex" src="/games/circle/Circle Tower.html" height="600" width="300"></iframe>
+    </div>
+  </Fragment>
 </Base>
